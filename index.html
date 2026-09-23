@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Scribnox</title>
+  <meta name="description" content="Privacy Policy for the Scribnox desktop application, published by eluZ1uM.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a1722'/%3E%3Cpath d='M18 16h20a8 8 0 0 1 8 8v24H25a7 7 0 0 1-7-7V16Z' fill='%23f2e7cd'/%3E%3Cpath d='M25 16v32M31 26h10M31 33h10M31 40h7' stroke='%23b56b45' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #17232d;
+      --muted: #5d6972;
+      --paper: #f7f4ee;
+      --surface: #fffdfa;
+      --line: #dcd5ca;
+      --accent: #a64f2d;
+      --navy: #0d2230;
+      --max: 76rem;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at 92% 4%, rgba(166, 79, 45, .11), transparent 28rem),
+        var(--paper);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 17px;
+      line-height: 1.72;
+    }
+
+    a { color: var(--accent); text-underline-offset: .18em; }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible { outline: 3px solid #d89370; outline-offset: 4px; border-radius: 2px; }
+
+    .masthead {
+      background: var(--navy);
+      color: #f8f2e8;
+      border-bottom: 4px solid var(--accent);
+    }
+
+    .masthead-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 1.1rem clamp(1.25rem, 4vw, 3rem);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .brand { display: flex; align-items: center; gap: .8rem; font-weight: 760; letter-spacing: .01em; }
+    .mark {
+      width: 2rem;
+      height: 2rem;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(255,255,255,.38);
+      border-radius: .55rem;
+      color: #efc2a7;
+      font-family: Georgia, serif;
+      font-weight: 700;
+    }
+    .publisher { color: #cbd5db; font-size: .86rem; }
+
+    .layout {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: clamp(2.4rem, 7vw, 6.5rem) clamp(1.25rem, 4vw, 3rem) 5rem;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 15rem;
+      gap: clamp(2rem, 6vw, 5.5rem);
+      align-items: start;
+    }
+
+    .eyebrow {
+      margin: 0 0 .8rem;
+      color: var(--accent);
+      font-size: .76rem;
+      font-weight: 800;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+    h1, h2 { font-family: Georgia, "Times New Roman", serif; color: var(--navy); }
+    h1 { margin: 0; max-width: 18ch; font-size: clamp(2.65rem, 7vw, 5.8rem); line-height: .98; letter-spacing: -.045em; }
+    .lede { max-width: 45rem; margin: 1.5rem 0 0; color: #3d4b55; font-size: clamp(1.08rem, 2vw, 1.28rem); }
+    .meta { display: flex; flex-wrap: wrap; gap: .65rem 1.25rem; margin: 1.4rem 0 3.5rem; color: var(--muted); font-size: .9rem; }
+    .meta span { padding-top: .5rem; border-top: 1px solid var(--line); }
+
+    section { scroll-margin-top: 1.5rem; margin: 0 0 3.4rem; }
+    h2 { margin: 0 0 1rem; font-size: clamp(1.65rem, 3vw, 2.15rem); line-height: 1.16; letter-spacing: -.02em; }
+    h3 { margin: 1.65rem 0 .45rem; color: var(--navy); font-size: 1rem; }
+    p { margin: 0 0 1rem; }
+    ul { margin: .65rem 0 1rem; padding-left: 1.25rem; }
+    li { margin: .45rem 0; padding-left: .25rem; }
+
+    .notice {
+      margin: 2.2rem 0 3.6rem;
+      padding: 1.25rem 1.35rem;
+      background: #edf2f3;
+      border-left: 4px solid var(--accent);
+      border-radius: 0 .5rem .5rem 0;
+      color: #293944;
+    }
+
+    .data-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+    .card {
+      padding: 1.25rem;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: .7rem;
+      box-shadow: 0 12px 30px rgba(13, 34, 48, .045);
+    }
+    .card h3 { margin-top: 0; }
+    .card p { margin-bottom: 0; color: #46535c; font-size: .95rem; }
+
+    nav {
+      position: sticky;
+      top: 1.5rem;
+      padding-left: 1.15rem;
+      border-left: 1px solid var(--line);
+    }
+    nav strong { display: block; margin-bottom: .7rem; color: var(--navy); font-size: .8rem; text-transform: uppercase; letter-spacing: .09em; }
+    nav a { display: block; padding: .27rem 0; color: var(--muted); font-size: .88rem; text-decoration: none; }
+    nav a:hover { color: var(--accent); }
+
+    footer { max-width: var(--max); margin: 0 auto; padding: 1.5rem clamp(1.25rem, 4vw, 3rem) 3rem; color: var(--muted); border-top: 1px solid var(--line); font-size: .85rem; }
+
+    @media (max-width: 820px) {
+      .publisher, nav { display: none; }
+      .layout { grid-template-columns: 1fr; padding-top: 3.2rem; }
+      .data-grid { grid-template-columns: 1fr; }
+      h1 { max-width: 12ch; }
+    }
+
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    @media print {
+      body { background: #fff; font-size: 11pt; }
+      .masthead { background: #fff; color: #000; border-bottom: 1px solid #bbb; }
+      .publisher, nav { display: none; }
+      .layout { display: block; max-width: none; padding: 2rem; }
+      section { break-inside: avoid; }
+      .card { box-shadow: none; }
+      a { color: inherit; }
+    }
+  </style>
+</head>
+<body>
+  <header class="masthead">
+    <div class="masthead-inner">
+      <div class="brand"><span class="mark" aria-hidden="true">S</span><span>Scribnox</span></div>
+      <div class="publisher">Published by eluZ1uM</div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <main>
+      <p class="eyebrow">Privacy Policy</p>
+      <h1>Your writing stays yours.</h1>
+      <p class="lede">This Privacy Policy explains how Scribnox, a Windows desktop application published by eluZ1uM, processes information when you write, edit, use optional AI tools, or manage a Scribnox Pro subscription.</p>
+      <div class="meta">
+        <span>Effective: September 23, 2026</span>
+        <span>Product: Scribnox</span>
+        <span>Microsoft Store ID: 9PL5TT6W1RSF</span>
+      </div>
+
+      <div class="notice"><strong>At a glance:</strong> Scribnox stores books and projects on your device. It has no advertising, analytics, telemetry, or crash-reporting service. Information leaves your device only when you choose an online feature, such as an OpenAI-powered tool or Scribnox Pro billing.</div>
+
+      <section id="data-we-collect">
+        <h2>Data We Collect</h2>
+        <p>Scribnox does not require a Scribnox account and does not operate a cloud library. The application processes the following categories of information:</p>
+        <div class="data-grid">
+          <article class="card"><h3>Writing and project data</h3><p>Manuscripts, imported text, titles, descriptions, keywords, categories, authors, prices, currencies, chosen stores, chapter structure, formatting, covers, cover prompts and variants, drafts, version history, translations, Book Brain entries, AI results, and assistant content.</p></article>
+          <article class="card"><h3>Audio recordings</h3><p>Voice dictation recorded after you grant microphone access. Recordings and transcription results may be saved with the relevant local book project.</p></article>
+          <article class="card"><h3>Settings and credentials</h3><p>Your interface language, your OpenAI API key if you add one, and local status information needed to show whether the key is connected.</p></article>
+          <article class="card"><h3>Subscription information</h3><p>An anonymous, randomly generated installation license ID; subscription state; last-check time; and, where applicable, the subscription expiry or renewal date. Scribnox does not receive or store your complete card number.</p></article>
+        </div>
+        <p>Scribnox does not contain advertising SDKs, analytics tools, telemetry, tracking pixels, or a crash-reporting service. It does not collect a contact list, precise location, browsing history, or device advertising identifier.</p>
+      </section>
+
+      <section id="how-we-use-data">
+        <h2>How We Use Data</h2>
+        <p>Scribnox uses information to provide the features you request: creating and editing books, saving and recovering projects, importing and exporting files, producing covers and publishing files, maintaining version history, responding to writing-assistant commands, checking subscription access, and providing optional AI analysis, generation, translation, proofreading, transcription, brainstorming, outlining, and consistency tools.</p>
+        <p>We do not use manuscript content or other project data for advertising, behavioural profiling, or training a Scribnox-owned AI model.</p>
+      </section>
+
+      <section id="local-storage">
+        <h2>Local Storage</h2>
+        <p>In the packaged Windows application, books, drafts, metadata, cover images, recordings, AI outputs, Book Brain entries, and version history are stored in a local <code>library.json</code> file under the application's Windows user-data directory. Scribnox also keeps a local previous-file backup for recovery. Subscription status and the anonymous license ID are stored in separate local JSON files.</p>
+        <p>Your OpenAI API key is stored separately and encrypted using Electron <code>safeStorage</code>, which uses operating-system protection on Windows. An encrypted previous copy may be retained to recover from an interrupted or failed replacement. The key is not stored in the book library.</p>
+        <p>The development browser version uses IndexedDB for its local library and drafts and browser local storage for the interface-language preference. During migration to the desktop file store, legacy browser data may remain until it is cleared by the user.</p>
+      </section>
+
+      <section id="ai-providers">
+        <h2>AI Providers</h2>
+        <p>Scribnox currently supports OpenAI only. You supply your own OpenAI API key and pay OpenAI directly for API usage. Scribnox sends an AI request only after you deliberately activate an AI or transcription feature.</p>
+        <p>Depending on the feature, a request may include some or all of the text you selected, manuscript sections or the full manuscript, book title and description, keywords, chapter information, Book Brain entries, your instructions or cover prompt, existing AI analysis, language settings, or a voice recording. The API key is transmitted to OpenAI in the authorization header. Cover generation sends a text prompt and receives an image; a cover image you upload yourself is not sent to OpenAI.</p>
+        <p>AI requests are sent directly from the desktop application to OpenAI over HTTPS. Scribnox does not proxy, log, or retain a separate server-side copy of those requests. OpenAI processes and retains data under the terms and settings applicable to your OpenAI API account. Review the <a href="https://openai.com/policies/privacy-policy/" rel="noopener noreferrer">OpenAI Privacy Policy</a> and your API data controls before using these features.</p>
+      </section>
+
+      <section id="payments">
+        <h2>Payments</h2>
+        <p>Scribnox Pro subscriptions are processed by Stripe in an external browser. When you start checkout, Scribnox sends Stripe the anonymous installation license ID as a client reference. Stripe independently collects and processes the payment, billing, and contact details you provide on its pages. Scribnox does not receive or store your complete payment-card details.</p>
+        <p>A Scribnox subscription-verification service hosted on Cloudflare receives signed Stripe webhook events and stores the license ID together with Stripe customer and subscription identifiers, whether the subscription is active, and the current subscription period end. The desktop application sends the license ID to that service to check or restore access and receives subscription status and, when available, the period-end date. Manuscripts, OpenAI keys, and AI requests are not sent to Stripe or this service.</p>
+        <p>Payment information is handled under the <a href="https://stripe.com/privacy" rel="noopener noreferrer">Stripe Privacy Policy</a>. Cloudflare provides the hosting and key-value storage used by the verification service under the <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener noreferrer">Cloudflare Privacy Policy</a>.</p>
+      </section>
+
+      <section id="data-sharing">
+        <h2>Data Sharing</h2>
+        <p>Information is disclosed only as needed to provide a feature you choose:</p>
+        <ul>
+          <li><strong>OpenAI:</strong> AI inputs, relevant writing content, audio, and your API credential for the request.</li>
+          <li><strong>Stripe:</strong> the anonymous installation license ID and information you enter during checkout or subscription management.</li>
+          <li><strong>Cloudflare:</strong> subscription-verification records and requests described above.</li>
+          <li><strong>Authorities or legal recipients:</strong> only if disclosure is required by applicable law or necessary to protect legal rights and security.</li>
+        </ul>
+        <p>Scribnox does not sell personal information. Links to book retailers open their websites, but Scribnox does not automatically upload your book or project data to them.</p>
+      </section>
+
+      <section id="security">
+        <h2>Security</h2>
+        <p>Scribnox uses local file isolation, operating-system encryption for the OpenAI key, atomic file writes and a recovery copy for the library, HTTPS for external requests, and signed Stripe webhook verification. The application isolates its interface from direct operating-system access and limits internal communication to approved operations.</p>
+        <p>No security measure can guarantee absolute protection. You are responsible for securing your Windows account, device, exported files, backups, OpenAI account, and any API key you provide.</p>
+      </section>
+
+      <section id="data-retention">
+        <h2>Data Retention</h2>
+        <p>Local books and related data remain on your device until you delete them or remove the application's data files. Recovery copies remain until replaced or deleted. Removing the application may not remove its user-data directory. Your encrypted OpenAI key remains until you disconnect it in Scribnox or delete the relevant application data.</p>
+        <p>The anonymous license ID and cached subscription status remain locally until the application data is deleted. Subscription-verification records are retained for as long as needed to provide, secure, restore, and account for the subscription and to meet legal obligations. Stripe and OpenAI determine retention for information they process under their respective policies and account settings.</p>
+      </section>
+
+      <section id="user-rights">
+        <h2>User Rights</h2>
+        <p>You can access and edit project information within Scribnox, export your work, delete books, remove your OpenAI key, clear local application data, and manage or cancel a Stripe subscription through the available subscription-management link. Deleting local application data is permanent unless you have a separate backup.</p>
+        <p>Depending on where you live, you may have legal rights to access, correct, delete, restrict, object to, or obtain a copy of personal information, and to withdraw consent where processing relies on consent. For data held by OpenAI or Stripe, use the privacy controls or contact channels provided by that company. To make a request concerning Scribnox subscription-verification records, contact the publisher using the channel below. Do not include a manuscript, API key, payment-card details, or other sensitive content in a public message.</p>
+      </section>
+
+      <section id="children">
+        <h2>Children</h2>
+        <p>Scribnox is a general-purpose writing application and is not directed to children under 13. We do not knowingly collect personal information from children through a Scribnox account because Scribnox has no account system. A parent or guardian who believes a child has provided personal information through an online feature may contact us to request appropriate action.</p>
+      </section>
+
+      <section id="changes">
+        <h2>Changes to This Policy</h2>
+        <p>We may update this policy when Scribnox features, providers, or legal requirements change. The effective date at the top will be revised when an update is published. Material changes will be presented through an appropriate notice, such as an application update, Store listing, or this page.</p>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>For privacy questions or requests relating to Scribnox, contact the publisher:</p>
+        <p><strong>eluZ1uM</strong><br>Contact: <a href="https://github.com/eluZ1uM" rel="noopener noreferrer">GitHub publisher profile</a><br>Product: Scribnox<br>Microsoft Store Product ID: 9PL5TT6W1RSF</p>
+      </section>
+    </main>
+
+    <nav aria-label="Policy sections">
+      <strong>On this page</strong>
+      <a href="#data-we-collect">Data We Collect</a>
+      <a href="#how-we-use-data">How We Use Data</a>
+      <a href="#local-storage">Local Storage</a>
+      <a href="#ai-providers">AI Providers</a>
+      <a href="#payments">Payments</a>
+      <a href="#data-sharing">Data Sharing</a>
+      <a href="#security">Security</a>
+      <a href="#data-retention">Data Retention</a>
+      <a href="#user-rights">User Rights</a>
+      <a href="#children">Children</a>
+      <a href="#changes">Changes</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+
+  <footer>© 2026 eluZ1uM. Privacy Policy for Scribnox.</footer>
+</body>
+</html>
