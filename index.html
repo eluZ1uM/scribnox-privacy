@@ -163,20 +163,20 @@
       <h1>Your writing stays yours.</h1>
       <p class="lede">This Privacy Policy explains how Scribnox, a Windows desktop application published by eluZ1uM, processes information when you write, edit, use optional AI tools, or manage a Scribnox Pro subscription.</p>
       <div class="meta">
-        <span>Effective: September 23, 2026</span>
+        <span>Effective: September 28, 2026 (Scribnox 1.1)</span>
         <span>Product: Scribnox</span>
         <span>Microsoft Store ID: 9PL5TT6W1RSF</span>
       </div>
 
-      <div class="notice"><strong>At a glance:</strong> Scribnox stores books and projects on your device. It has no advertising, analytics, telemetry, or crash-reporting service. Information leaves your device only when you choose an online feature, such as an OpenAI-powered tool or Scribnox Pro billing.</div>
+      <div class="notice"><strong>At a glance:</strong> Scribnox stores books and projects on your device. It has no advertising, analytics, telemetry, or crash-reporting service. Information leaves your device only when you choose an online feature, such as an AI tool that uses the AI provider you chose, or Scribnox Pro billing.</div>
 
       <section id="data-we-collect">
         <h2>Data We Collect</h2>
         <p>Scribnox does not require a Scribnox account and does not operate a cloud library. The application processes the following categories of information:</p>
         <div class="data-grid">
           <article class="card"><h3>Writing and project data</h3><p>Manuscripts, imported text, titles, descriptions, keywords, categories, authors, prices, currencies, chosen stores, chapter structure, formatting, covers, cover prompts and variants, drafts, version history, translations, Book Brain entries, AI results, and assistant content.</p></article>
-          <article class="card"><h3>Audio recordings</h3><p>Voice dictation recorded after you grant microphone access. Recordings and transcription results may be saved with the relevant local book project.</p></article>
-          <article class="card"><h3>Settings and credentials</h3><p>Your interface language, your OpenAI API key if you add one, and local status information needed to show whether the key is connected.</p></article>
+          <article class="card"><h3>Audio recordings</h3><p>Voice dictation recorded after you grant microphone access and press record. Recordings made in the writing Assistant and their transcription results may be saved with the relevant local book project. Recordings made with the Dictate button in the text editor are kept only in memory until transcribed and are never saved.</p></article>
+          <article class="card"><h3>Settings and credentials</h3><p>Your interface language, your AI settings (chosen text and speech-to-text provider, model names, and for a custom provider its name and Base URL), the API key for each AI provider you add, and local status information needed to show whether a key is connected.</p></article>
           <article class="card"><h3>Subscription information</h3><p>An anonymous, randomly generated installation license ID; subscription state; last-check time; and, where applicable, the subscription expiry or renewal date. Scribnox does not receive or store your complete card number.</p></article>
         </div>
         <p>Scribnox does not contain advertising SDKs, analytics tools, telemetry, tracking pixels, or a crash-reporting service. It does not collect a contact list, precise location, browsing history, or device advertising identifier.</p>
@@ -191,21 +191,22 @@
       <section id="local-storage">
         <h2>Local Storage</h2>
         <p>In the packaged Windows application, books, drafts, metadata, cover images, recordings, AI outputs, Book Brain entries, and version history are stored in a local <code>library.json</code> file under the application's Windows user-data directory. Scribnox also keeps a local previous-file backup for recovery. Subscription status and the anonymous license ID are stored in separate local JSON files.</p>
-        <p>Your OpenAI API key is stored separately and encrypted using Electron <code>safeStorage</code>, which uses operating-system protection on Windows. An encrypted previous copy may be retained to recover from an interrupted or failed replacement. The key is not stored in the book library.</p>
+        <p>Each AI provider API key you add is stored separately, one encrypted file per provider, using Electron <code>safeStorage</code>, which uses operating-system protection on Windows. An encrypted previous copy may be retained to recover from an interrupted or failed replacement. Keys are not stored in the book library, and AI settings other than keys are stored in a local settings file.</p>
         <p>The development browser version uses IndexedDB for its local library and drafts and browser local storage for the interface-language preference. During migration to the desktop file store, legacy browser data may remain until it is cleared by the user.</p>
       </section>
 
       <section id="ai-providers">
         <h2>AI Providers</h2>
-        <p>Scribnox currently supports OpenAI only. You supply your own OpenAI API key and pay OpenAI directly for API usage. Scribnox sends an AI request only after you deliberately activate an AI or transcription feature.</p>
-        <p>Depending on the feature, a request may include some or all of the text you selected, manuscript sections or the full manuscript, book title and description, keywords, chapter information, Book Brain entries, your instructions or cover prompt, existing AI analysis, language settings, or a voice recording. The API key is transmitted to OpenAI in the authorization header. Cover generation sends a text prompt and receives an image; a cover image you upload yourself is not sent to OpenAI.</p>
-        <p>AI requests are sent directly from the desktop application to OpenAI over HTTPS. Scribnox does not proxy, log, or retain a separate server-side copy of those requests. OpenAI processes and retains data under the terms and settings applicable to your OpenAI API account. Review the <a href="https://openai.com/policies/privacy-policy/" rel="noopener noreferrer">OpenAI Privacy Policy</a> and your API data controls before using these features.</p>
+        <p>AI features are optional. You choose the provider in Settings and supply your own API key; you pay that provider directly for API usage. Supported providers are OpenAI, Anthropic (Claude), Google Gemini, Groq, and a custom service with an OpenAI-compatible API whose address (Base URL) you enter yourself. Speech-to-text uses the speech provider you choose (OpenAI, Groq, or a custom service that supports transcription). Cover generation uses OpenAI only. Scribnox sends an AI request only after you deliberately activate an AI, dictation, or transcription feature.</p>
+        <p>Depending on the feature, a request may include some or all of the text you selected, manuscript sections or the full manuscript, book title and description, keywords, chapter information, Book Brain entries, your instructions or cover prompt, existing AI analysis, language settings, or a voice recording. Each API key is sent only to its own provider, in that provider's authentication header. Cover generation sends a text prompt to OpenAI and receives an image; a cover image you upload yourself is not sent anywhere.</p>
+        <p>AI requests are sent directly from the desktop application to the provider you chose over HTTPS. Scribnox does not proxy, log, or retain a separate server-side copy of those requests. Each provider processes and retains data under its own terms and your account settings with it; review its privacy policy before use: <a href="https://openai.com/policies/privacy-policy/" rel="noopener noreferrer">OpenAI</a>, <a href="https://www.anthropic.com/legal/privacy" rel="noopener noreferrer">Anthropic</a>, <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google</a>, <a href="https://groq.com/privacy-policy/" rel="noopener noreferrer">Groq</a>. If you configure a custom provider, the privacy terms of that service apply.</p>
+        <p>AI features generate content live in response to your input. If an AI feature produces content you consider inappropriate, please report it to <a href="mailto:ooooooo532@gmail.com">ooooooo532@gmail.com</a>.</p>
       </section>
 
       <section id="payments">
         <h2>Payments</h2>
         <p>Scribnox Pro subscriptions are processed by Stripe in an external browser. When you start checkout, Scribnox sends Stripe the anonymous installation license ID as a client reference. Stripe independently collects and processes the payment, billing, and contact details you provide on its pages. Scribnox does not receive or store your complete payment-card details.</p>
-        <p>A Scribnox subscription-verification service hosted on Cloudflare receives signed Stripe webhook events and stores the license ID together with Stripe customer and subscription identifiers, whether the subscription is active, and the current subscription period end. The desktop application sends the license ID to that service to check or restore access and receives subscription status and, when available, the period-end date. Manuscripts, OpenAI keys, and AI requests are not sent to Stripe or this service.</p>
+        <p>A Scribnox subscription-verification service hosted on Cloudflare receives signed Stripe webhook events and stores the license ID together with Stripe customer and subscription identifiers, whether the subscription is active, and the current subscription period end. The desktop application sends the license ID to that service to check or restore access and receives subscription status and, when available, the period-end date. Manuscripts, AI provider keys, and AI requests are not sent to Stripe or this service.</p>
         <p>Payment information is handled under the <a href="https://stripe.com/privacy" rel="noopener noreferrer">Stripe Privacy Policy</a>. Cloudflare provides the hosting and key-value storage used by the verification service under the <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener noreferrer">Cloudflare Privacy Policy</a>.</p>
       </section>
 
@@ -213,7 +214,7 @@
         <h2>Data Sharing</h2>
         <p>Information is disclosed only as needed to provide a feature you choose:</p>
         <ul>
-          <li><strong>OpenAI:</strong> AI inputs, relevant writing content, audio, and your API credential for the request.</li>
+          <li><strong>The AI provider you chose</strong> (OpenAI, Anthropic, Google, Groq, or your custom service): AI inputs, relevant writing content, audio for transcription, and that provider's API key for the request.</li>
           <li><strong>Stripe:</strong> the anonymous installation license ID and information you enter during checkout or subscription management.</li>
           <li><strong>Cloudflare:</strong> subscription-verification records and requests described above.</li>
           <li><strong>Authorities or legal recipients:</strong> only if disclosure is required by applicable law or necessary to protect legal rights and security.</li>
@@ -223,20 +224,20 @@
 
       <section id="security">
         <h2>Security</h2>
-        <p>Scribnox uses local file isolation, operating-system encryption for the OpenAI key, atomic file writes and a recovery copy for the library, HTTPS for external requests, and signed Stripe webhook verification. The application isolates its interface from direct operating-system access and limits internal communication to approved operations.</p>
-        <p>No security measure can guarantee absolute protection. You are responsible for securing your Windows account, device, exported files, backups, OpenAI account, and any API key you provide.</p>
+        <p>Scribnox uses local file isolation, operating-system encryption for AI provider API keys, atomic file writes and a recovery copy for the library, HTTPS for external requests, and signed Stripe webhook verification. The application isolates its interface from direct operating-system access and limits internal communication to approved operations.</p>
+        <p>No security measure can guarantee absolute protection. You are responsible for securing your Windows account, device, exported files, backups, AI provider accounts, and any API key you provide.</p>
       </section>
 
       <section id="data-retention">
         <h2>Data Retention</h2>
-        <p>Local books and related data remain on your device until you delete them or remove the application's data files. Recovery copies remain until replaced or deleted. Removing the application may not remove its user-data directory. Your encrypted OpenAI key remains until you disconnect it in Scribnox or delete the relevant application data.</p>
-        <p>The anonymous license ID and cached subscription status remain locally until the application data is deleted. Subscription-verification records are retained for as long as needed to provide, secure, restore, and account for the subscription and to meet legal obligations. Stripe and OpenAI determine retention for information they process under their respective policies and account settings.</p>
+        <p>Local books and related data remain on your device until you delete them or remove the application's data files. Recovery copies remain until replaced or deleted. Removing the application may not remove its user-data directory. Your encrypted AI provider keys remain until you disconnect them in Scribnox or delete the relevant application data.</p>
+        <p>The anonymous license ID and cached subscription status remain locally until the application data is deleted. Subscription-verification records are retained for as long as needed to provide, secure, restore, and account for the subscription and to meet legal obligations. Stripe and the AI providers you use determine retention for information they process under their respective policies and account settings.</p>
       </section>
 
       <section id="user-rights">
         <h2>User Rights</h2>
-        <p>You can access and edit project information within Scribnox, export your work, delete books, remove your OpenAI key, clear local application data, and manage or cancel a Stripe subscription through the available subscription-management link. Deleting local application data is permanent unless you have a separate backup.</p>
-        <p>Depending on where you live, you may have legal rights to access, correct, delete, restrict, object to, or obtain a copy of personal information, and to withdraw consent where processing relies on consent. For data held by OpenAI or Stripe, use the privacy controls or contact channels provided by that company. To make a request concerning Scribnox subscription-verification records, contact the publisher using the channel below. Do not include a manuscript, API key, payment-card details, or other sensitive content in a public message.</p>
+        <p>You can access and edit project information within Scribnox, export your work, delete books, remove your AI provider keys, clear local application data, and manage or cancel a Stripe subscription through the available subscription-management link. Deleting local application data is permanent unless you have a separate backup.</p>
+        <p>Depending on where you live, you may have legal rights to access, correct, delete, restrict, object to, or obtain a copy of personal information, and to withdraw consent where processing relies on consent. For data held by an AI provider or Stripe, use the privacy controls or contact channels provided by that company. To make a request concerning Scribnox subscription-verification records, contact the publisher using the channel below. Do not include a manuscript, API key, payment-card details, or other sensitive content in a public message.</p>
       </section>
 
       <section id="children">
@@ -252,7 +253,7 @@
       <section id="contact">
         <h2>Contact</h2>
         <p>For privacy questions or requests relating to Scribnox, contact the publisher:</p>
-        <p><strong>eluZ1uM</strong><br>Contact: <a href="https://github.com/eluZ1uM" rel="noopener noreferrer">GitHub publisher profile</a><br>Product: Scribnox<br>Microsoft Store Product ID: 9PL5TT6W1RSF</p>
+        <p><strong>eluZ1uM</strong><br>Email: <a href="mailto:ooooooo532@gmail.com">ooooooo532@gmail.com</a><br>Publisher profile: <a href="https://github.com/eluZ1uM" rel="noopener noreferrer">GitHub</a><br>Product: Scribnox<br>Microsoft Store Product ID: 9PL5TT6W1RSF</p>
       </section>
     </main>
 
