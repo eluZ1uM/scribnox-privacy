@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Политика конфиденциальности — Scribnox</title>
+  <meta name="description" content="Политика конфиденциальности приложения Scribnox для Windows от издателя eluZ1uM.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="alternate" hreflang="en" href="https://eluz1um.github.io/scribnox-privacy/">
+  <link rel="alternate" hreflang="ru" href="https://eluz1um.github.io/scribnox-privacy/ru.html">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a1722'/%3E%3Cpath d='M18 16h20a8 8 0 0 1 8 8v24H25a7 7 0 0 1-7-7V16Z' fill='%23f2e7cd'/%3E%3Cpath d='M25 16v32M31 26h10M31 33h10M31 40h7' stroke='%23b56b45' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #17232d;
+      --muted: #5d6972;
+      --paper: #f7f4ee;
+      --surface: #fffdfa;
+      --line: #dcd5ca;
+      --accent: #a64f2d;
+      --navy: #0d2230;
+      --max: 76rem;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at 92% 4%, rgba(166, 79, 45, .11), transparent 28rem),
+        var(--paper);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 17px;
+      line-height: 1.72;
+    }
+
+    a { color: var(--accent); text-underline-offset: .18em; }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible { outline: 3px solid #d89370; outline-offset: 4px; border-radius: 2px; }
+
+    .masthead {
+      background: var(--navy);
+      color: #f8f2e8;
+      border-bottom: 4px solid var(--accent);
+    }
+
+    .masthead-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 1.1rem clamp(1.25rem, 4vw, 3rem);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .brand { display: flex; align-items: center; gap: .8rem; font-weight: 760; letter-spacing: .01em; }
+    .mark {
+      width: 2rem;
+      height: 2rem;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(255,255,255,.38);
+      border-radius: .55rem;
+      color: #efc2a7;
+      font-family: Georgia, serif;
+      font-weight: 700;
+    }
+    .publisher { color: #cbd5db; font-size: .86rem; }
+
+    .layout {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: clamp(2.4rem, 7vw, 6.5rem) clamp(1.25rem, 4vw, 3rem) 5rem;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 15rem;
+      gap: clamp(2rem, 6vw, 5.5rem);
+      align-items: start;
+    }
+
+    .eyebrow {
+      margin: 0 0 .8rem;
+      color: var(--accent);
+      font-size: .76rem;
+      font-weight: 800;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+    h1, h2 { font-family: Georgia, "Times New Roman", serif; color: var(--navy); }
+    h1 { margin: 0; max-width: 18ch; font-size: clamp(2.65rem, 7vw, 5.8rem); line-height: .98; letter-spacing: -.045em; }
+    .lede { max-width: 45rem; margin: 1.5rem 0 0; color: #3d4b55; font-size: clamp(1.08rem, 2vw, 1.28rem); }
+    .meta { display: flex; flex-wrap: wrap; gap: .65rem 1.25rem; margin: 1.4rem 0 3.5rem; color: var(--muted); font-size: .9rem; }
+    .meta span { padding-top: .5rem; border-top: 1px solid var(--line); }
+
+    section { scroll-margin-top: 1.5rem; margin: 0 0 3.4rem; }
+    h2 { margin: 0 0 1rem; font-size: clamp(1.65rem, 3vw, 2.15rem); line-height: 1.16; letter-spacing: -.02em; }
+    h3 { margin: 1.65rem 0 .45rem; color: var(--navy); font-size: 1rem; }
+    p { margin: 0 0 1rem; }
+    ul { margin: .65rem 0 1rem; padding-left: 1.25rem; }
+    li { margin: .45rem 0; padding-left: .25rem; }
+
+    .notice {
+      margin: 2.2rem 0 3.6rem;
+      padding: 1.25rem 1.35rem;
+      background: #edf2f3;
+      border-left: 4px solid var(--accent);
+      border-radius: 0 .5rem .5rem 0;
+      color: #293944;
+    }
+
+    .data-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+    .card {
+      padding: 1.25rem;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: .7rem;
+      box-shadow: 0 12px 30px rgba(13, 34, 48, .045);
+    }
+    .card h3 { margin-top: 0; }
+    .card p { margin-bottom: 0; color: #46535c; font-size: .95rem; }
+
+    nav {
+      position: sticky;
+      top: 1.5rem;
+      padding-left: 1.15rem;
+      border-left: 1px solid var(--line);
+    }
+    nav strong { display: block; margin-bottom: .7rem; color: var(--navy); font-size: .8rem; text-transform: uppercase; letter-spacing: .09em; }
+    nav a { display: block; padding: .27rem 0; color: var(--muted); font-size: .88rem; text-decoration: none; }
+    nav a:hover { color: var(--accent); }
+
+    footer { max-width: var(--max); margin: 0 auto; padding: 1.5rem clamp(1.25rem, 4vw, 3rem) 3rem; color: var(--muted); border-top: 1px solid var(--line); font-size: .85rem; }
+
+    .masthead-links { display: flex; align-items: center; gap: 1.25rem; }
+    .lang-link { color: #f8f2e8; font-size: .86rem; font-weight: 700; text-decoration: none; padding: .3rem .8rem; border: 1px solid rgba(255,255,255,.38); border-radius: 999px; }
+    .lang-link:hover { border-color: #efc2a7; color: #efc2a7; }
+    .translation-note { margin: -2rem 0 2.4rem; color: var(--muted); font-size: .9rem; }
+
+    @media (max-width: 820px) {
+      .publisher, nav { display: none; }
+      .layout { grid-template-columns: 1fr; padding-top: 3.2rem; }
+      .data-grid { grid-template-columns: 1fr; }
+      h1 { max-width: 12ch; }
+    }
+
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    @media print {
+      body { background: #fff; font-size: 11pt; }
+      .masthead { background: #fff; color: #000; border-bottom: 1px solid #bbb; }
+      .publisher, nav { display: none; }
+      .layout { display: block; max-width: none; padding: 2rem; }
+      section { break-inside: avoid; }
+      .card { box-shadow: none; }
+      a { color: inherit; }
+    }
+  </style>
+</head>
+<body>
+  <header class="masthead">
+    <div class="masthead-inner">
+      <div class="brand"><span class="mark" aria-hidden="true">S</span><span>Scribnox</span></div>
+      <div class="masthead-links"><span class="publisher">Издатель: eluZ1uM</span><a class="lang-link" href="./" hreflang="en" lang="en">English version</a></div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <main>
+      <p class="eyebrow">Политика конфиденциальности</p>
+      <h1>Ваши тексты остаются вашими.</h1>
+      <p class="lede">Эта политика конфиденциальности объясняет, как Scribnox — приложение для Windows от издателя eluZ1uM — обрабатывает информацию, когда вы пишете и редактируете текст, пользуетесь необязательными ИИ-инструментами или управляете подпиской Scribnox Pro.</p>
+      <div class="meta">
+        <span>Действует с 28 сентября 2026 г. (Scribnox 1.1)</span>
+        <span>Продукт: Scribnox</span>
+        <span>ID в Microsoft Store: 9PL5TT6W1RSF</span>
+      </div>
+
+      <p class="translation-note">Это перевод <a href="./" hreflang="en" lang="en">английской версии</a>. Если формулировки расходятся, действует английская версия.</p>
+
+      <div class="notice"><strong>Коротко:</strong> Scribnox хранит книги и проекты на вашем устройстве. В приложении нет рекламы, аналитики, телеметрии и сервиса отчётов о сбоях. Информация покидает ваше устройство, только когда вы сами выбираете онлайн-функцию — например, ИИ-инструмент, который работает через выбранного вами ИИ-провайдера, или оплату Scribnox Pro.</div>
+
+      <section id="data-we-collect">
+        <h2>Какие данные мы обрабатываем</h2>
+        <p>Для работы со Scribnox не нужна учётная запись Scribnox, и у приложения нет облачной библиотеки. Приложение обрабатывает следующие категории информации:</p>
+        <div class="data-grid">
+          <article class="card"><h3>Тексты и данные проектов</h3><p>Рукописи, импортированный текст, названия, описания, ключевые слова, категории, авторы, цены, валюты, выбранные магазины, структура глав, оформление, обложки, запросы и варианты обложек, черновики, история версий, переводы, записи Book Brain, результаты ИИ и содержимое помощника.</p></article>
+          <article class="card"><h3>Аудиозаписи</h3><p>Голосовой ввод, записанный после того, как вы разрешили доступ к микрофону и нажали запись. Записи, сделанные в помощнике, и результаты их расшифровки могут сохраняться в соответствующем локальном проекте книги. Записи, сделанные кнопкой диктовки в текстовом редакторе, хранятся только в памяти до расшифровки и никогда не сохраняются.</p></article>
+          <article class="card"><h3>Настройки и ключи доступа</h3><p>Язык интерфейса, настройки ИИ (выбранный провайдер для текста и для распознавания речи, названия моделей, а для собственного провайдера — его название и адрес Base URL), API-ключ для каждого добавленного вами ИИ-провайдера и локальные сведения о том, подключён ли ключ.</p></article>
+          <article class="card"><h3>Данные о подписке</h3><p>Анонимный, случайно созданный идентификатор лицензии установки; состояние подписки; время последней проверки; а также, если применимо, дата окончания или продления подписки. Scribnox не получает и не хранит полный номер вашей банковской карты.</p></article>
+        </div>
+        <p>В Scribnox нет рекламных SDK, инструментов аналитики, телеметрии, пикселей отслеживания и сервиса отчётов о сбоях. Приложение не собирает список контактов, точное местоположение, историю браузера и рекламный идентификатор устройства.</p>
+      </section>
+
+      <section id="how-we-use-data">
+        <h2>Как мы используем данные</h2>
+        <p>Scribnox использует информацию, чтобы выполнять функции, которые вы запрашиваете: создание и редактирование книг, сохранение и восстановление проектов, импорт и экспорт файлов, создание обложек и файлов для публикации, ведение истории версий, ответы на команды помощника, проверку доступа к подписке, а также необязательные ИИ-функции — анализ, генерацию, перевод, корректуру, расшифровку, поиск идей, составление планов и проверку согласованности.</p>
+        <p>Мы не используем содержимое рукописей и другие данные проектов для рекламы, поведенческого профилирования или обучения собственной ИИ-модели Scribnox.</p>
+      </section>
+
+      <section id="local-storage">
+        <h2>Локальное хранение</h2>
+        <p>В установленном приложении для Windows книги, черновики, метаданные, изображения обложек, записи, результаты ИИ, записи Book Brain и история версий хранятся в локальном файле <code>library.json</code> в папке пользовательских данных приложения Windows. Scribnox также хранит локальную резервную копию предыдущей версии файла для восстановления. Состояние подписки и анонимный идентификатор лицензии хранятся в отдельных локальных JSON-файлах.</p>
+        <p>Каждый добавленный API-ключ ИИ-провайдера хранится отдельно — по одному зашифрованному файлу на провайдера — с помощью Electron <code>safeStorage</code>, который использует защиту операционной системы Windows. Может сохраняться зашифрованная предыдущая копия, чтобы восстановиться после прерванной или неудачной замены. Ключи не хранятся в библиотеке книг, а остальные настройки ИИ хранятся в локальном файле настроек.</p>
+        <p>Версия для разработки, работающая в браузере, хранит локальную библиотеку и черновики в IndexedDB, а выбранный язык интерфейса — в локальном хранилище браузера. При переносе в файловое хранилище настольного приложения старые данные браузера могут оставаться, пока пользователь их не очистит.</p>
+      </section>
+
+      <section id="ai-providers">
+        <h2>ИИ-провайдеры</h2>
+        <p>ИИ-функции необязательны. Вы выбираете провайдера в настройках и указываете собственный API-ключ; за использование API вы платите провайдеру напрямую. Поддерживаются OpenAI, Anthropic (Claude), Google Gemini, Groq и собственный сервис с API, совместимым с OpenAI, адрес которого (Base URL) вы вводите сами. Для распознавания речи используется выбранный вами провайдер (OpenAI, Groq или собственный сервис с поддержкой расшифровки). Обложки создаются только через OpenAI. Scribnox отправляет запрос к ИИ только после того, как вы сами запустили ИИ-функцию, диктовку или расшифровку.</p>
+        <p>В зависимости от функции запрос может содержать весь выделенный текст или его часть, разделы рукописи или всю рукопись, название и описание книги, ключевые слова, сведения о главах, записи Book Brain, ваши указания или запрос для обложки, ранее полученный ИИ-анализ, настройки языка или голосовую запись. Каждый API-ключ отправляется только своему провайдеру, в заголовке авторизации этого провайдера. При создании обложки в OpenAI отправляется текстовый запрос, а в ответ приходит изображение; обложка, которую вы загружаете сами, никуда не отправляется.</p>
+        <p>Запросы к ИИ отправляются напрямую из приложения выбранному провайдеру по HTTPS. Scribnox не пропускает эти запросы через свои серверы, не записывает их и не хранит их копию на сервере. Каждый провайдер обрабатывает и хранит данные по своим условиям и в соответствии с настройками вашей учётной записи у него; перед использованием ознакомьтесь с его политикой конфиденциальности: <a href="https://openai.com/policies/privacy-policy/" rel="noopener noreferrer">OpenAI</a>, <a href="https://www.anthropic.com/legal/privacy" rel="noopener noreferrer">Anthropic</a>, <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google</a>, <a href="https://groq.com/privacy-policy/" rel="noopener noreferrer">Groq</a>. Если вы подключили собственного провайдера, действуют условия конфиденциальности этого сервиса.</p>
+        <p>ИИ-функции создают содержимое в реальном времени в ответ на ваш ввод. Если ИИ-функция выдала содержимое, которое вы считаете неприемлемым, сообщите об этом на <a href="mailto:ooooooo532@gmail.com">ooooooo532@gmail.com</a>.</p>
+      </section>
+
+      <section id="payments">
+        <h2>Оплата</h2>
+        <p>Подписки Scribnox Pro оформляются через Stripe во внешнем браузере. Когда вы начинаете оплату, Scribnox передаёт Stripe анонимный идентификатор лицензии установки в качестве ссылки на клиента. Stripe самостоятельно собирает и обрабатывает платёжные, расчётные и контактные данные, которые вы вводите на его страницах. Scribnox не получает и не хранит полные данные вашей банковской карты.</p>
+        <p>Служба проверки подписок Scribnox, размещённая в Cloudflare, получает подписанные уведомления (webhook) от Stripe и хранит идентификатор лицензии вместе с идентификаторами клиента и подписки в Stripe, признаком активной подписки и датой окончания текущего периода. Приложение отправляет этой службе идентификатор лицензии, чтобы проверить или восстановить доступ, и получает состояние подписки и, если есть, дату окончания периода. Рукописи, API-ключи ИИ-провайдеров и запросы к ИИ не отправляются ни в Stripe, ни в эту службу.</p>
+        <p>Платёжные данные обрабатываются в соответствии с <a href="https://stripe.com/privacy" rel="noopener noreferrer">политикой конфиденциальности Stripe</a>. Cloudflare предоставляет хостинг и хранилище «ключ — значение» для службы проверки в соответствии с <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener noreferrer">политикой конфиденциальности Cloudflare</a>.</p>
+      </section>
+
+      <section id="data-sharing">
+        <h2>Передача данных</h2>
+        <p>Информация передаётся только в той мере, в какой это нужно для выбранной вами функции:</p>
+        <ul>
+          <li><strong>Выбранному вами ИИ-провайдеру</strong> (OpenAI, Anthropic, Google, Groq или ваш собственный сервис): данные для ИИ, нужные фрагменты текста, аудио для расшифровки и API-ключ этого провайдера для запроса.</li>
+          <li><strong>Stripe:</strong> анонимный идентификатор лицензии установки и данные, которые вы вводите при оплате или управлении подпиской.</li>
+          <li><strong>Cloudflare:</strong> записи и запросы службы проверки подписок, описанные выше.</li>
+          <li><strong>Государственным органам или иным получателям по закону:</strong> только если раскрытие требуется применимым законом или необходимо для защиты прав и безопасности.</li>
+        </ul>
+        <p>Scribnox не продаёт персональные данные. Ссылки на книжные магазины открывают их сайты, но Scribnox не загружает туда автоматически ваши книги или данные проектов.</p>
+      </section>
+
+      <section id="security">
+        <h2>Безопасность</h2>
+        <p>Scribnox использует изоляцию локальных файлов, шифрование API-ключей средствами операционной системы, атомарную запись файлов и резервную копию библиотеки для восстановления, HTTPS для внешних запросов и проверку подписи уведомлений Stripe. Интерфейс приложения изолирован от прямого доступа к операционной системе, а внутренний обмен ограничен разрешёнными операциями.</p>
+        <p>Никакие меры безопасности не дают абсолютной защиты. Вы отвечаете за безопасность своей учётной записи Windows, устройства, экспортированных файлов, резервных копий, учётных записей у ИИ-провайдеров и всех API-ключей, которые вы указываете.</p>
+      </section>
+
+      <section id="data-retention">
+        <h2>Сроки хранения</h2>
+        <p>Локальные книги и связанные с ними данные хранятся на вашем устройстве, пока вы их не удалите или не удалите файлы данных приложения. Резервные копии хранятся, пока их не заменят или не удалят. Удаление приложения может не удалить папку пользовательских данных. Зашифрованные ключи ИИ-провайдеров хранятся, пока вы не отключите их в Scribnox или не удалите соответствующие данные приложения.</p>
+        <p>Анонимный идентификатор лицензии и сохранённое состояние подписки хранятся локально, пока данные приложения не удалены. Записи службы проверки подписок хранятся столько, сколько нужно для предоставления, защиты, восстановления и учёта подписки и для выполнения требований закона. Сроки хранения информации, которую обрабатывают Stripe и используемые вами ИИ-провайдеры, определяются их политиками и настройками вашей учётной записи.</p>
+      </section>
+
+      <section id="user-rights">
+        <h2>Ваши права</h2>
+        <p>В Scribnox вы можете просматривать и изменять данные проектов, экспортировать свою работу, удалять книги, удалять ключи ИИ-провайдеров, очищать локальные данные приложения, а также управлять подпиской Stripe или отменить её по ссылке управления подпиской. Удаление локальных данных приложения необратимо, если у вас нет отдельной резервной копии.</p>
+        <p>В зависимости от места вашего проживания у вас могут быть законные права на доступ к персональным данным, их исправление, удаление, ограничение обработки, возражение против обработки и получение их копии, а также право отозвать согласие, если обработка основана на согласии. Для данных, которые хранятся у ИИ-провайдера или Stripe, используйте инструменты конфиденциальности или контакты этих компаний. Чтобы направить запрос о записях службы проверки подписок Scribnox, свяжитесь с издателем по указанным ниже контактам. Не отправляйте в публичных сообщениях рукописи, API-ключи, данные банковской карты и другую конфиденциальную информацию.</p>
+      </section>
+
+      <section id="children">
+        <h2>Дети</h2>
+        <p>Scribnox — приложение для письма общего назначения, оно не предназначено для детей младше 13 лет. Мы сознательно не собираем персональные данные детей через учётную запись Scribnox, потому что учётных записей в Scribnox нет. Родитель или опекун, который считает, что ребёнок предоставил персональные данные через онлайн-функцию, может связаться с нами, чтобы мы приняли необходимые меры.</p>
+      </section>
+
+      <section id="changes">
+        <h2>Изменения политики</h2>
+        <p>Мы можем обновлять эту политику при изменении функций Scribnox, провайдеров или требований закона. При публикации обновления дата вступления в силу вверху страницы будет изменена. О существенных изменениях мы сообщим подходящим способом — например, в обновлении приложения, в карточке в Microsoft Store или на этой странице.</p>
+      </section>
+
+      <section id="contact">
+        <h2>Контакты</h2>
+        <p>С вопросами и запросами о конфиденциальности, связанными со Scribnox, обращайтесь к издателю:</p>
+        <p><strong>eluZ1uM</strong><br>Эл. почта: <a href="mailto:ooooooo532@gmail.com">ooooooo532@gmail.com</a><br>Профиль издателя: <a href="https://github.com/eluZ1uM" rel="noopener noreferrer">GitHub</a><br>Продукт: Scribnox<br>ID продукта в Microsoft Store: 9PL5TT6W1RSF</p>
+      </section>
+    </main>
+
+    <nav aria-label="Разделы политики">
+      <strong>На этой странице</strong>
+      <a href="#data-we-collect">Какие данные мы обрабатываем</a>
+      <a href="#how-we-use-data">Как мы используем данные</a>
+      <a href="#local-storage">Локальное хранение</a>
+      <a href="#ai-providers">ИИ-провайдеры</a>
+      <a href="#payments">Оплата</a>
+      <a href="#data-sharing">Передача данных</a>
+      <a href="#security">Безопасность</a>
+      <a href="#data-retention">Сроки хранения</a>
+      <a href="#user-rights">Ваши права</a>
+      <a href="#children">Дети</a>
+      <a href="#changes">Изменения</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+  </div>
+
+  <footer>© 2026 eluZ1uM. Политика конфиденциальности Scribnox.</footer>
+</body>
+</html>

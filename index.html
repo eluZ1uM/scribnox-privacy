@@ -6,6 +6,8 @@
   <title>Privacy Policy — Scribnox</title>
   <meta name="description" content="Privacy Policy for the Scribnox desktop application, published by eluZ1uM.">
   <meta name="color-scheme" content="light dark">
+  <link rel="alternate" hreflang="en" href="https://eluz1um.github.io/scribnox-privacy/">
+  <link rel="alternate" hreflang="ru" href="https://eluz1um.github.io/scribnox-privacy/ru.html">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a1722'/%3E%3Cpath d='M18 16h20a8 8 0 0 1 8 8v24H25a7 7 0 0 1-7-7V16Z' fill='%23f2e7cd'/%3E%3Cpath d='M25 16v32M31 26h10M31 33h10M31 40h7' stroke='%23b56b45' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
   <style>
     :root {
@@ -130,6 +132,11 @@
 
     footer { max-width: var(--max); margin: 0 auto; padding: 1.5rem clamp(1.25rem, 4vw, 3rem) 3rem; color: var(--muted); border-top: 1px solid var(--line); font-size: .85rem; }
 
+    .masthead-links { display: flex; align-items: center; gap: 1.25rem; }
+    .lang-link { color: #f8f2e8; font-size: .86rem; font-weight: 700; text-decoration: none; padding: .3rem .8rem; border: 1px solid rgba(255,255,255,.38); border-radius: 999px; }
+    .lang-link:hover { border-color: #efc2a7; color: #efc2a7; }
+    .translation-note { margin: -2rem 0 2.4rem; color: var(--muted); font-size: .9rem; }
+
     @media (max-width: 820px) {
       .publisher, nav { display: none; }
       .layout { grid-template-columns: 1fr; padding-top: 3.2rem; }
@@ -153,7 +160,7 @@
   <header class="masthead">
     <div class="masthead-inner">
       <div class="brand"><span class="mark" aria-hidden="true">S</span><span>Scribnox</span></div>
-      <div class="publisher">Published by eluZ1uM</div>
+      <div class="masthead-links"><span class="publisher">Published by eluZ1uM</span><a class="lang-link" href="ru.html" hreflang="ru" lang="ru">Русская версия</a></div>
     </div>
   </header>
 
